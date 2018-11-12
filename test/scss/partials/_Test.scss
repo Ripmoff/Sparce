@@ -1,0 +1,127 @@
+// Test
+// -------
+
+@keyframes spin-fade {
+    0% {opacity: 0;}
+    100% {transform:rotate(360deg); opacity: 1;}
+}
+
+@keyframes spin {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+
+// html
+html {
+    scroll-behavior: smooth;
+}
+
+// Header 
+header {
+    margin-bottom: 8rem;
+}
+
+// Navigation
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    box-shadow: 0 -0.1rem 0.5rem 0 $color-gray-300;
+    border-bottom: 1px solid $color-gray-200;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+
+    background-color: $color-gray-100;
+    
+    > .container {
+        justify-content: space-between;
+        align-items: center;
+
+        display: flex;
+    }
+}
+
+.logo {
+    max-width: 3.2rem;
+}
+
+.links {
+    transition: 0.3s;
+
+    margin-right: 3rem;
+}
+
+.links > a {
+    margin-left: 0.4rem;
+}
+
+// hero
+.hero {
+    flex-direction: column;
+    align-items: center;
+
+    display: flex;
+
+    height: 100vh;
+
+    background-color: $color-gray-100;
+}
+
+.hero-image {
+    animation-name: spin-fade;
+    animation-duration: 3s;
+
+    margin-top: calc(5.4rem + 10vh);
+    max-width: 22rem;
+}
+
+.primary-text {
+    color: $color-primary;
+}
+
+.hero-cta {
+    width: 22rem;
+}
+
+// Float tag
+#docs {
+    position: absolute;
+    top: -6rem;
+}
+
+// Flowbox
+.flowbox-showcase {
+    margin-bottom: 1.5rem;
+    border-radius: 0.3rem;
+    height: 10rem;
+
+    background-color: $color-primary;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.list {
+    display: flex;
+
+    &>* {
+        flex: 1;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .links {
+        margin-right: 0;
+    }
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}

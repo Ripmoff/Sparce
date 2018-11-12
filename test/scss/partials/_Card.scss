@@ -1,0 +1,32 @@
+// Card
+.card {
+    box-shadow: 0 0 0.5rem 0 $color-gray-200;
+    border: 1px solid $color-gray-200;
+    border-radius: 1rem;
+
+    overflow: hidden;
+}
+
+.card-image {
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    font-size: 3rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.card-buttons {
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}

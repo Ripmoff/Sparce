@@ -1,0 +1,45 @@
+// Grid IMPLEMENT A CSS GRID
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.grid {
+	flex-direction: column;
+
+	display: flex;
+	
+	width: 100%;
+
+	&.grid-wrap {
+		flex-wrap: wrap;
+	}
+
+	&.grid-rigid {
+		flex-direction: row;
+	}
+
+	&>* {
+		flex: 1;
+	}
+
+}
+
+// Larger than mobile screen
+@media (min-width: $breakpoint-tablet) {
+
+	.grid {
+		flex-direction: row;
+
+		&.grid-padding {
+
+			> *:not(:first-child) {
+				padding-left: 1rem;
+			}
+	
+			> *:not(:last-child) {
+				padding-right: 1rem;
+			}
+
+		}
+
+	}
+}
+

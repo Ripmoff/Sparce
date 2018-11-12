@@ -1,0 +1,43 @@
+// Code
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+code {
+	overflow-x: auto;
+
+	margin: 0 0.2rem;
+	border-radius: 0.4rem;
+	padding: 0.2rem 0.5rem;
+
+	background: $color-code;
+
+	font-size: 86%;
+	font-family: "Roboto Mono", monospace;
+	white-space: nowrap;
+}
+
+pre {
+	margin-top: 0;
+	border-left: 0.3rem solid $color-primary;
+
+	background: $color-code;
+
+	white-space: pre-wrap;
+	
+
+	& > code {
+		display: block;
+
+		margin: 0;
+		border-radius: 0;
+		border-top: 1px solid transparent;
+		border-right: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+		padding: 1rem 1.5rem;
+		
+		white-space: pre-wrap;
+	}
+
+	& > code:focus {
+		outline: none;
+	}
+}

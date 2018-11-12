@@ -1,0 +1,50 @@
+// Utility
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Floats
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clearfix::after {
+	content: " ";
+
+	clear: both;
+		
+	display: table;
+}
+
+// Flowbox
+.flowbox {
+	flex-direction: column;
+
+	display: flex;
+	
+	width: 100%;
+
+	&> * {
+		flex: 1;
+		align-self: flex-start;
+	}
+
+}
+
+// Larger than mobile screen
+@media (min-width: $breakpoint-tablet) {
+	.flowbox {
+		flex-direction: row;
+
+		&> *:not(:first-child) {
+			margin-left: 1rem;
+		}
+	
+		&> *:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
+

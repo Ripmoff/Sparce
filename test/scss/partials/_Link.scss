@@ -1,0 +1,18 @@
+// Link
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+	border-bottom: 1px solid transparent;
+
+	text-decoration: none;
+	color: $color-primary;
+
+	&:hover,
+	&:focus {
+		border-bottom-color: $color-primary;
+	}
+}
+
+.neutral-link {
+	border-bottom: none;
+}
