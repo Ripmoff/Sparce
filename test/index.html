@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- THIS PAGE WAS MADE BY, DAVID NAIST ØVERNES (Ripmoff) -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sparce CSS</title>
+    <meta name="description" content="A page showing off the different style elements of the Sparce CSS mini framework">
+    <link rel="icon" type="image/png" href="test/img/logo.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Roboto:300,400,500,700,900" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="test/css/sparce.css">
+
+    <!-- JS -->
+    <script src="js/main.js" async></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="container">
+                <a href="https://ripmoff.github.io/Sparce/" class="neutral-link">
+                    <img class="logo" src="test/img/logo.png" alt="logo">
+                </a>
+            
+                <div class="links">
+                    <a href="#download">Download</a>
+                    <a href="#docs">Docs</a>
+                </div>
+            </div> 
+
+            <!-- Github corner --> <!-- source: http://tholman.com/github-corners/ -->
+            <a href="https://github.com/Ripmoff/Sparce.git" class="github-corner" aria-label="View source on GitHub"><svg width="53" height="53" viewBox="0 0 250 250" style="fill:#fd7e14; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero" id="download">
+            <img class="hero-image" src="test/img/logo.png" alt="logo">
+            <h1 class="hero-title">Sparce</h1>
+            <a href="https://github.com/Ripmoff/Sparce/archive/master.zip" class="button-contained button-ripple hero-cta">Download</a>
+        </section>
+    </header>
+
+
+    <main class="container">
+
+        <div id="docs"></div>
+
+        <h2>Documentation</h2>
+
+        <hr/>
+
+        <!-- Install -->
+        <section>
+            <h3>Install</h3>
+        </section>
+
+        <hr/>
+
+        <!-- Blockquote -->
+        <section>
+            <h3>Blockquote</h3>
+            <p>Sparce provides a clean look for all your quotations.</p>
+
+            <blockquote>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur in minus excepturi ipsam
+                repellendus, illum voluptatum aliquid velit. Accusantium eveniet quia velit corporis vel blanditiis
+                dolore ex, veritatis iusto quisquam." - Jane Doe</blockquote>
+        </section>
+
+        <hr/>
+
+        <!-- Button -->
+        <section>
+            <h3>Button</h3>
+            <p>The <code>button</code> is a design element that always apears in allmost all webpages, thats why the sparce buttons follow the google material design standard, you have 4 different buttons: <code>.contained-button</code>, <code>.outlined-button</code>, <code>.text-button</code>, and <code>.toggle-button</code>. You can also put each of the four buttons in a button group where they will be attached to eachother without borders between eachother. </p>
+
+            <div>
+                <button class="button-text button-ripple">button</button>
+                <button class="button-outlined button-ripple">button</button>
+                <button class="button-contained button-ripple">button</button>
+                <button class="button-toggle button-ripple"><img src="test/img/Icon2.svg" alt="test"></button>
+                <div class="button-group">
+                    <button class="button-toggle button-ripple">play</button>
+                    <button class="button-toggle button-ripple"><img src="test/img/Icon1.svg" alt="test"></button>
+                    <button class="button-toggle button-ripple"><img src="test/img/Icon3.svg" alt="test"></button>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <!-- Card -->
+        <div>
+            <h3>Card</h3>
+            <p>Cards are the building blocks of a lot of websites in the moders web enviroment and as such sparce sports a nice genereal card you can use with any image you desire, it looks great both on mobile and desktop</p>
+
+            <div class="flowbox">
+                <div class="card clearfix">
+                    <img src="test/img/card.jpg" alt="card image" class="card-image">
+                    <div class="card-title">Abstract art</div>
+                    <p class="card-text">Abstraction indicates a departure from reality in depiction of imagery in art. This departure from accurate representation can be slight, partial, or complete. Abstraction exists along a continuum. Even art that aims for verisimilitude of the highest degree can be said to be abstract, at least theoretically, since perfect representation is likely to be exceedingly elusive. Artwork which takes liberties, altering for instance color and form in ways that are conspicuous, can be said to be partially abstract. Total abstraction bears no trace of any reference to anything recognizable.</p>
+                    <div class="card-buttons float-right">
+                        <a href="#" class="button-contained">View art</a>
+                    </div>
+                </div>
+        
+                <div class="card clearfix">
+                    <img src="test/img/card2.PNG" alt="card image" class="card-image">
+                    <div class="card-title">Classic art</div>
+                    <p class="card-text">Classicism is a force which is often present in post-medieval European and European influenced traditions; however, some periods felt themselves more connected to the classical ideals than others, particularly the Age of Enlightenment, when Neoclassicism was an important movement in the visual arts.</p>
+                    <div class="card-buttons float-right">
+                        <a href="#" class="button-contained">View art</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <hr/>
+
+        <!-- Code -->
+        <section>
+            <h3>Code</h3>
+            <p>While usually more relevant for developers sparce offers a very good looking display of code for when it's needed</p>
+
+            <figure>
+                <figcaption>CSS</figcaption>
+                <pre><code contenteditable spellcheck="false">figure {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}</code></pre>
+            </figure>
+        </section>
+
+        <hr/>
+
+        <!-- Form -->
+        <section>
+            <h3>Form</h3>
+            <p>With sparce forms do not just become easy to make they also look great</p>
+
+            <hr/> <!-- Divider -->
+
+            <form action="#">
+
+                <div class="flowbox clearfix">
+
+                    <div>
+                        <h4>Creating a login</h4>
+                        <p>By simply placing the apropriate input elements and applying the class <code>.float-right</code> to
+                            the button container and <code>.clearfix</code> to the container of the button container,
+                            we can create a beautiful login.</p>
+                    </div>
+
+                    <!-- Login-->
+                    <div >
+                        <!-- Login input-->
+                        <div>
+                            <div>
+                                <label>Email</label>
+                                <input type="email" required>
+                            </div>
+
+                            <div>
+                                <label>Password</label>
+                                <input type="password" required>
+                            </div>
+                        </div>
+
+                        <!-- Login buttons-->
+                        <div class="float-right">
+                            <input type="reset" value="Reset" class="button-text">
+                            <input type="submit" value="Login" class="button-contained">
+                        </div>
+
+                    </div>
+
+                </div> <!-- End of Login Showcase -->
+
+            </form>
+        </section>
+
+        <hr/>
+
+        <!-- List -->
+        <section>
+            <h3>List</h3>
+            <p>Lists are an important way of displaying information as such sparce makes them just a little bit more visually appealing</p>
+
+            <div class="list">
+                <div>
+                    <ul>
+                        <li>Test</li>
+                        <li>Test</li>
+                    </ul>
+                </div>
+                <div>
+                    <ol>
+                        <li>Test</li>
+                        <li>Test</li>
+
+                    </ol>
+                </div>
+                <div>
+                    <dl>
+                        <dt>Test 1</dt>
+                        <dd>Test 1.1</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <!-- Table -->
+        <section>
+            <h3>Table</h3>
+            <p>By adding a <code>border</code> on the bottom of each row and settign the titles to be bold we make a slick and good looking table with almost no effort</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Birthyear</th>
+                        <th>Name</th>
+                        <th>Haircolor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1948</td>
+                        <td>Jonas Hagen</td>
+                        <td>Ginger</td>
+                    </tr>
+
+                    <tr>
+                        <td>1997</td>
+                        <td>David Overnes</td>
+                        <td>Blond</td>
+                    </tr>
+
+                    <tr>
+                        <td>1986</td>
+                        <td>Loreen Palpa</td>
+                        <td>Brown</td>
+                    </tr>
+
+                    <tr>
+                        <td>1945</td>
+                        <td>Mark Solberg</td>
+                        <td>Brown</td>
+                    </tr>
+
+                    <tr>
+                        <td>1992</td>
+                        <td>Ngoya Tutu</td>
+                        <td>Black</td>
+                    </tr>
+
+                    <tr>
+                        <td>1953</td>
+                        <td>Roy Java</td>
+                        <td>Bald</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr/>
+
+        <!-- Typography -->
+        <section>
+            <h3>Typography</h3>
+            <p>The typography mostly changes the <code>h1</code> - <code>h6</code> elements to be a nice consisten gradient of font sizes ending with <code>h6</code> being the same size as the normal text. While this framework uses Roboto for most of it's text and headings (and Roboto mono for code) feel free to use and implement your own font.</p>
+            <h1>Header 1</h1>
+            <h2>Header 2</h2>
+            <h3>Header 3</h3>
+            <h4>Header 4</h4>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+            <p>General text</p>
+        </section>
+
+        <hr/>
+
+        <!-- Utility -->
+        <section>
+            <h3>Utility</h3>
+            <p>Sparce includes a small amount of utility classes that are commonly used in day to day styling.</p>
+
+            <hr/>
+
+            <h4>Float</h4>
+            <p>Use <code>.float-left</code> to float something to the left side of its container, use <code>.float-right</code> to float something to the right side of its container. If you use either float left or float right remember to use <code>.clearfix</code> on the container of the float.</p>
+            <div class="clearfix">
+                <div class="float-left">
+                    <h2>Left</h2>
+                </div>
+                <div class="float-right">
+                    <h2>Right</h2>
+                </div>
+            </div>
+
+            <hr/>
+
+            <h4>Flowbox</h4>
+            <p><code>.flowbox</code> is just a flexbox that can take in as many elements as you want and will produce a column of elements that all take the same amount of space. The flowbox changes to a row when you go above mobile width.</p>
+            <div class="flowbox">
+                <div class="flowbox-showcase"></div>
+                <div class="flowbox-showcase"></div>
+                <div class="flowbox-showcase"></div>
+            </div>
+
+            <hr/>
+
+            <h4>Divider</h4>
+            <p>Using the <code>hr</code> element and applying the <code>data-content="..."</code> attribute will give you a special message in the middle of your divider.</p>
+            <div class="flowbox">
+                <hr data-content="Cool Divider">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
